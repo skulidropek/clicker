@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.830002, y: -1.7699997}
-  m_SizeDelta: {x: 80.31, y: 16.77}
+  m_AnchoredPosition: {x: 24.89, y: -2.6}
+  m_SizeDelta: {x: 88.43, y: 18.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8977547552750087126
 CanvasRenderer:
@@ -142,7 +142,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 5
+    m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -338,7 +338,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8977547553313531643}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -370,6 +370,8 @@ MonoBehaviour:
   m_image: {fileID: 8977547552460196792}
   m_title: {fileID: 8977547552847496841}
   m_description: {fileID: 8977547552750087129}
+  m_ActionButton: {fileID: 8977547554079769975}
+  m_ButtonText: {fileID: 8977547553116596511}
 --- !u!1 &8977547554079769977
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,8 +408,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.33, y: -18.743}
-  m_SizeDelta: {x: 51.25, y: 12.515}
+  m_AnchoredPosition: {x: 1.915, y: -18.3}
+  m_SizeDelta: {x: 42.48, y: 11.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8977547554079769973
 CanvasRenderer:
@@ -437,8 +439,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: e2c62cce41944634386751a553c793ba, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

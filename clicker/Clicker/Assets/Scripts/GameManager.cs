@@ -7,7 +7,11 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private int _clickCount;
     [SerializeField] private Text _clickText;
-    
+
+    private int _clickValue;
+
+    public int ClickValue { get => _clickValue; set => _clickValue = value; }
+
     void Start()
     {
         StartCoroutine(AutoClick(1, 1));
@@ -20,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     public void Click(int value)
     {
+        value += _clickValue;
         _clickCount += value;
     }
 

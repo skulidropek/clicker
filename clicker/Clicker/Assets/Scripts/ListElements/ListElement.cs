@@ -12,6 +12,10 @@ public class ListElement : MonoBehaviour
     [Space]
     [SerializeField] private Text m_title;
     [SerializeField] private Text m_description;
+    [Space]
+    [SerializeField] private Button m_ActionButton;
+    [SerializeField] private Text m_ButtonText;
+    //[SerializeField] private Color m_ButtonImage;
 
     public void SetTitle(string title) => m_title.text = title;
     public void SetDescription(string description) => m_description.text = description;
@@ -19,4 +23,8 @@ public class ListElement : MonoBehaviour
 
     public float Width() => m_transform.rect.width;
     public float Height() => m_transform.rect.height;
+
+  //  public void SetButtonColor(Color color) => this.m_ActionButton.image.color = color;
+    public void SetButtonTitle(string title) => this.m_ButtonText.text = title;
+    public Button GetActionButton() => this.m_ActionButton;
 }
