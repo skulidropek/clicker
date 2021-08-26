@@ -8,20 +8,29 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _clickCount;
     [SerializeField] private Text _clickText;
 
+    private bool _autoClickActive;
     private int _clickValue;
-
+    private int _autoClickValue;
     public int ClickValue { get => _clickValue; set => _clickValue = value; }
+    public int AutoClickValue { get => _autoClickValue; set => _autoClickValue = value; }
 
     void Start()
     {
-        StartCoroutine(AutoClick(1, 1));
+        StartCoroutine(AutoClick(0, 1));
     }
 
     void Update()
     {
         _clickText.text = _clickCount.ToString();
+        //if(_autoClickActive)
     }
 
+    public void Click(int value, bool autoClick = false)
+    {
+        if (!autoClick)
+            value += _clickValue;
+        _clickCount += value;
+    }
     public void Click(int value)
     {
         value += _clickValue;
@@ -32,7 +41,9 @@ public class GameManager : MonoBehaviour
     {
         while(true)
         {
-            Click(value);
+           // if (!_autoClickActive) break;
+
+            Click(value + AutoClickValue);
             yield return new WaitForSeconds(timer);
         }
     }
