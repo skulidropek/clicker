@@ -39,9 +39,9 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator AutoClick(int value, float timer)
     {
-        while(true)
+        while (true)
         {
-           // if (!_autoClickActive) break;
+            // if (!_autoClickActive) break;
 
             Click(value + AutoClickValue);
             yield return new WaitForSeconds(timer);

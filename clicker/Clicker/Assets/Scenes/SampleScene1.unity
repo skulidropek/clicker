@@ -155,7 +155,7 @@ RectTransform:
   m_Children:
   - {fileID: 468088856}
   m_Father: {fileID: 1247821841}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -707,6 +707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8977547553313531643, guid: 2f605233311f2cc47a233ed2152a4762, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f605233311f2cc47a233ed2152a4762, type: 3}
 --- !u!224 &934527024 stripped
@@ -936,12 +940,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1368816018}
+  m_Father: {fileID: 1247821841}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.19, y: 2.76}
+  m_AnchoredPosition: {x: -9.399994, y: 0}
   m_SizeDelta: {x: 164.38, y: 319.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200475445
@@ -1014,7 +1018,7 @@ RectTransform:
   m_Children:
   - {fileID: 412322378}
   m_Father: {fileID: 1247821841}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1138,11 +1142,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1200475444}
   - {fileID: 1717892760}
   - {fileID: 1200786047}
   - {fileID: 57949336}
   m_Father: {fileID: 1368816018}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1321,7 +1326,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1200475444}
   - {fileID: 1247821841}
   m_Father: {fileID: 2109379995}
   m_RootOrder: 3
@@ -1358,16 +1362,16 @@ MonoBehaviour:
   m_ListView: {fileID: 1963462491}
   m_Prefab: {fileID: 8977547553313531643, guid: 2f605233311f2cc47a233ed2152a4762, type: 3}
   m_Cells:
-  - sprite: {fileID: 0}
-    title: 
-    description: 
+  - sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    title: +1 auto
+    description: 100;
     shop: 0
-    clickCount: 0
-  - sprite: {fileID: 0}
-    title: 
-    description: 
-    shop: 0
-    clickCount: 0
+    clickCount: 1
+  - sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+    title: +1
+    description: 200$
+    shop: 1
+    clickCount: 1
 --- !u!1 &1431638582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1470,7 @@ RectTransform:
   m_Children:
   - {fileID: 1963462490}
   m_Father: {fileID: 1247821841}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
